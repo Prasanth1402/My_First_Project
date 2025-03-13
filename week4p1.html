@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovators Conference</title>
+    <style>
+        /* Simple Selectors */
+        h1 { color: darkblue; text-align: center; } /* Element selector */
+        #keynote { color: darkred; font-size: 1.8em; } /* ID selector */
+        .speaker { color: steelblue; background-color: #00ff45; padding: 5px; } /* Class selector */
+        h2, h3 { border-bottom: 2px solid darkblue; } /* Group selector */
+        * { margin: 0; padding: 0; font-family: Arial, sans-serif; } /* Universal selector */
+
+        /* Combinator Selectors */
+        section h3 { color: forestgreen; } /* Descendant selector */
+        section > p { font-size: 1.2em; } /* Child selector */
+        h2 + p { color: purple; font-style: italic; } /* Adjacent sibling selector */
+        h2 ~ p { text-decoration: underline; } /* General sibling selector */
+
+        /* Pseudo-class Selectors */
+        a:hover { color: orangered; text-decoration: none; } /* Hover effect */
+        li:nth-child(odd) { background-color: violet; } /* Odd list items */
+        li:nth-child(even) { background-color: lightyellow; } /* Even list items */
+        input:focus { border-color: green; } /* Focus on input field */
+
+        /* Pseudo-element Selectors */
+        p::first-letter { font-size: 2em; font-weight: bold; color: crimson; } /* First letter of paragraph */
+        p::after { content: " 🚀"; color: gold; } /* Decorative content after paragraph text */
+
+        /* Attribute Selectors */
+        input[type="email"] { border: 2px solid darkblue; border-radius: 4px; } /* Email input styling */
+        button[type="submit"] { background-color: darkgreen; color: white; border: none; padding: 10px 20px; } /* Submit button */
+    </style>
+</head>
+<body>
+    <h1>Tech Innovators Conference 2025</h1>
+
+    <h2 id="keynote">Keynote Speakers</h2>
+    <p class="speaker">Dr. Alice Quantum - Leading Researcher in AI</p>
+    <p class="speaker">John Matrix - Innovator in Robotics</p>
+
+    <h2>Event Highlights</h2>
+    <section>
+        <h3>Workshops</h3>
+        <p>Explore advanced topics with industry leaders.</p>
+    </section>
+    <p>Networking opportunities for all attendees.</p>
+
+    <h2>Register Now</h2>
+    <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" placeholder="you@example.com"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Schedule</h2>
+    <ul>
+        <li>9:00 AM - Opening Remarks</li>
+        <li>10:00 AM - Keynote Address</li>
+        <li>11:30 AM - Breakout Sessions</li>
+        <li>1:00 PM - Networking Lunch</li>
+        <li>3:00 PM - Workshop Series</li>
+    </ul>
+
+    <a href="#" target="_blank">Visit Official Website</a>
+</body>
+</html>
